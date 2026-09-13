@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 
-/// Paleta pensada para um leitor de mangá: fundo "papel" neutro (não o creme
-/// característico de temas genéricos), tinta quase-preta para texto, e um
-/// único acento vermelho (lembrando carimbos/selos usados em capas e
-/// splash pages de mangá) usado com moderação nos pontos interativos.
+
 class AppColors {
   static const ink = Color(0xFF1A1A1D);
   static const paper = Color(0xFFF5F6F8);
@@ -15,8 +12,6 @@ class AppColors {
   static const darkSurface = Color(0xFF25262C);
   static const darkMuted = Color(0xFFA6A6AE);
 
-  /// Fundo do leitor de páginas: sempre escuro, independente do tema do
-  /// app (convenção comum em leitores de quadrinhos/mangá).
   static const readerBg = Color(0xFF101114);
 }
 
