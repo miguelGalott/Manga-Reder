@@ -29,8 +29,6 @@ class MangaReaderApp extends StatelessWidget {
   }
 }
 
-/// Decide se mostra a tela de login ou o app principal, com base na sessão
-/// salva localmente (SharedPreferences).
 class _RootGate extends StatelessWidget {
   const _RootGate();
 
