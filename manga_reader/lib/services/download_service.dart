@@ -10,8 +10,7 @@ class DownloadService {
     return Directory('${base.path}/MangaDownloads/$safeManga/$safeChapter');
   }
 
-  /// Baixa todas as páginas de um capítulo para o armazenamento privado do
-  /// app (não precisa de permissão de armazenamento).
+
   static Future<void> downloadChapter({
     required String mangaTitle,
     required String chapterLabel,
@@ -36,8 +35,7 @@ class DownloadService {
     }
   }
 
-  /// Retorna os arquivos locais de um capítulo já baixado, ordenados,
-  /// ou null se ele ainda não foi baixado.
+
   static Future<List<File>?> getLocalPages(
       String mangaTitle, String chapterLabel) async {
     final dir = await _dirFor(mangaTitle, chapterLabel);
