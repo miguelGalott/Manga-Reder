@@ -1,0 +1,41 @@
+name: manga_reader
+description: "App de leitura de mangás com busca, favoritos, histórico e comentários (MongoDB)."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # Chamadas HTTP para a API do MangaDex
+  http: ^1.2.0
+
+  # Conexão direta com MongoDB (driver puro Dart)
+  mongo_dart: ^0.10.9
+
+  # Hash de senha (nunca salvamos senha em texto puro)
+  crypto: ^3.0.3
+
+  # Gerenciamento de estado (sessão do usuário logado)
+  provider: ^6.1.2
+
+  # Carregamento e cache de imagens (capas e páginas)
+  cached_network_image: ^3.4.1
+
+  # Persistir o login entre aberturas do app
+  shared_preferences: ^2.2.2
+
+  # Pasta local para salvar capítulos baixados
+  path_provider: ^2.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
